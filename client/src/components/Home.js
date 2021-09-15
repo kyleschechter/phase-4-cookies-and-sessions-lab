@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <main>
-      {articles.map((article) => {
+      {articles.forEach((article) => {
         const emojis = makeEmojiList(article.minutes_to_read);
         return (
           <article key={article.id}>
